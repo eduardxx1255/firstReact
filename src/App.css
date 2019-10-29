@@ -23,8 +23,87 @@
   background: skyblue;
   margin: 1em;
 }
+#tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .card h5 {
   font-weight: bolder;
   margin: inherit;
+}
+
+.poke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 173);
+}
+
+.poke img {
+  width: 150px;
+}
+
+.poke button {
+  height: 60px;
+  width: 300px;
+  background-color: rgb(255, 208, 0);
+  border: none;
+  border-radius: 5px;
+}
+
+.numeropkm {
+  width: 50px;
+}
+
+/* #datospkm {
+  display: none;
+} */
+.barras{
+  display: flex;
+  position: relative;
+}
+
+.uno {
+  /* min-height: 100vh; */
+  background-color: red;
+  width: 200px;
+  animation: barras 5s infinite;
+  animation-delay: 1s;
+}
+.dos {
+  /* min-height: 100vh; */
+  background-color: blueviolet;
+  width: 200px;
+  animation: barras 5s infinite;
+  animation-delay: .5s;
+}
+.tres {
+  /* min-height: 100vh; */
+  background-color: green;
+  width: 200px;
+  animation: barras 5s infinite;
+  
+}
+
+@keyframes barras {
+0% {
+  height: 1px;
+}
+50% {
+  height: 100vh;
+}
+100%{
+  height: 1px;
+}
+}
+
+.tres:hover {
+  animation-play-state: paused;
+}
+.dos:hover {
+  animation-play-state: paused;
+}
+.uno:hover {
+  animation-play-state: paused;
 }

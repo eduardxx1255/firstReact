@@ -28,7 +28,7 @@ class AllPost extends React.Component {
           <div class="col-md-9">
             <h3>This is my list of post</h3>
             {/* <p>{this.state.posts && this.state.posts.map(item => <p>{item.title}</p>)}</p> */}
-            <p>{this.state.posts && this.state.posts.map(item => <p>
+            <p id="tarjetas">{this.state.posts && this.state.posts.map(item => <p>
               <Tarjeta
                 title={item.title}
                 id={item.id}

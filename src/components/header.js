@@ -18,7 +18,7 @@ function Header() {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <Link class="nav-link" to="/">
               Editor de texto
             </Link>
@@ -31,6 +31,16 @@ function Header() {
           <li class="nav-item">
             <Link class="nav-link" to="/Single">
               Traer post especifico
+            </Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/Pokemon">
+              Busca tu Pokemon
+            </Link>
+          </li>
+          <li class="nav-item">
+            <Link class="nav-link" to="/Animation">
+              Animacion
             </Link>
           </li>
         </ul>
